@@ -1,0 +1,113 @@
+@import "./base.css";
+
+/* 全局样式，非 scoped */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#app {
+  height: 100%;
+}
+
+/* Element Plus 弹窗美化样式 */
+.el-message-box__wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100vh !important;
+  background: rgba(15, 23, 42, 0.45) !important;
+  backdrop-filter: blur(6px) !important;
+}
+
+.el-message-box {
+  margin: 0 auto !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2000 !important;
+  border-radius: 18px !important;
+  background: var(--color-panel-alt) !important;
+  box-shadow: var(--shadow-strong) !important;
+  border: 1px solid var(--color-border) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.el-message-box__header {
+  padding: 20px 24px 12px 24px !important;
+  background: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+
+.el-message-box__title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--color-heading) !important;
+  text-align: center !important;
+}
+
+.el-message-box__content {
+  padding: 20px 24px !important;
+  background: var(--color-panel-alt) !important;
+}
+
+.el-message-box__message {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: var(--color-text-secondary) !important;
+  text-align: center !important;
+}
+
+.el-message-box__btns {
+  padding: 16px 24px 24px 24px !important;
+  display: flex !important;
+  gap: 12px !important;
+  justify-content: center !important;
+  background: var(--color-surface) !important;
+  border-top: 1px solid var(--color-border) !important;
+}
+
+.el-message-box__btns .el-button {
+  border-radius: 10px !important;
+  padding: 10px 24px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  border: none !important;
+}
+
+.el-message-box__btns .el-button:first-child {
+  background: var(--color-input-background) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+.el-message-box__btns .el-button:first-child:hover {
+  background: rgba(148, 163, 184, 0.32) !important;
+}
+
+.el-message-box__btns .el-button:last-child {
+  background: linear-gradient(135deg, var(--color-accent-strong), var(--color-accent)) !important;
+  color: var(--color-accent-contrast) !important;
+}
+
+.el-message-box__btns .el-button:last-child:hover {
+  background: var(--color-accent-strong) !important;
+}
+
+.el-message-box {
+  animation: modalSlideIn 0.24s ease-out !important;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

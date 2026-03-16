@@ -1,0 +1,145 @@
+/* 基础调色板，涵盖亮/暗两种主题 */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f9fc;
+  --vt-c-white-mute: #eef2ff;
+
+  --vt-c-black: #050b16;
+  --vt-c-black-soft: #0b1220;
+  --vt-c-black-mute: #101a2d;
+
+  --vt-c-indigo: #1e3a8a;
+
+  --color-app-background: #e9edf7;
+  --color-panel: rgba(255, 255, 255, 0.94);
+  --color-panel-alt: rgba(248, 250, 252, 0.96);
+  --color-sidebar-surface: linear-gradient(180deg, rgba(248, 250, 252, 0.96) 0%, rgba(226, 232, 240, 0.92) 100%);
+  --color-surface: rgba(255, 255, 255, 0.95);
+  --color-elevated-surface: rgba(255, 255, 255, 0.9);
+  --color-border: rgba(148, 163, 184, 0.3);
+  --color-border-strong: rgba(100, 116, 139, 0.35);
+  --color-heading: #0f172a;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #475569;
+  --color-muted: #94a3b8;
+  --color-link: #2563eb;
+  --color-link-hover: #1d4ed8;
+  --color-accent: #3b82f6;
+  --color-accent-strong: #2563eb;
+  --color-accent-contrast: #f8fafc;
+  --color-danger: #ef4444;
+  --color-danger-strong: #dc2626;
+  --color-input-background: rgba(248, 250, 252, 0.9);
+  --color-toolbar-bg: rgba(59, 130, 246, 0.12);
+  --color-toolbar-hover-bg: rgba(59, 130, 246, 0.18);
+  --color-toolbar-text: #1d4ed8;
+  --color-toolbar-muted: #64748b;
+  --color-reasoning-surface: rgba(15, 23, 42, 0.04);
+  --color-reasoning-border: rgba(148, 163, 184, 0.32);
+  --color-reasoning-contrast: rgba(248, 250, 252, 0.7);
+  --color-code-surface: rgba(15, 23, 42, 0.04);
+  --color-code-border: rgba(148, 163, 184, 0.32);
+  --color-code-label: #64748b;
+  --color-copy-button-bg: #1f2937;
+  --color-copy-button-hover: #111827;
+  --color-new-indicator-bg: #1f2937;
+  --color-table-bg: rgba(255, 255, 255, 0.95);
+  --color-table-header-bg: rgba(226, 232, 240, 0.6);
+  --color-table-border: rgba(148, 163, 184, 0.32);
+  --color-scroll-track: rgba(148, 163, 184, 0.18);
+  --color-scroll-thumb: rgba(100, 116, 139, 0.38);
+  --color-scroll-thumb-hover: rgba(100, 116, 139, 0.5);
+  --color-bubble-user: linear-gradient(135deg, #3b82f6, #2563eb);
+  --color-bubble-user-border: rgba(37, 99, 235, 0.45);
+  --color-stop-button-bg: rgba(239, 68, 68, 0.16);
+  --color-stop-button-shadow: rgba(239, 68, 68, 0.24);
+  --color-stop-button-text: #dc2626;
+  --color-surface-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+  --shadow-soft: 0 10px 24px rgba(15, 23, 42, 0.08);
+  --shadow-strong: 0 18px 36px rgba(15, 23, 42, 0.15);
+}
+
+:root[data-theme="dark"] {
+  --color-app-background: #050b16;
+  --color-panel: rgba(13, 20, 34, 0.9);
+  --color-panel-alt: rgba(10, 17, 30, 0.92);
+  --color-sidebar-surface: linear-gradient(180deg, rgba(17, 24, 39, 0.96) 0%, rgba(11, 18, 32, 0.92) 100%);
+  --color-surface: rgba(15, 23, 42, 0.92);
+  --color-elevated-surface: rgba(30, 41, 59, 0.88);
+  --color-border: rgba(71, 85, 105, 0.4);
+  --color-border-strong: rgba(94, 113, 137, 0.5);
+  --color-heading: #e2e8f0;
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #cbd5f5;
+  --color-muted: #94a3b8;
+  --color-link: #93c5fd;
+  --color-link-hover: #bfdbfe;
+  --color-accent: #60a5fa;
+  --color-accent-strong: #3b82f6;
+  --color-accent-contrast: #020617;
+  --color-danger: #fca5a5;
+  --color-danger-strong: #f87171;
+  --color-input-background: rgba(15, 23, 42, 0.78);
+  --color-toolbar-bg: rgba(59, 130, 246, 0.16);
+  --color-toolbar-hover-bg: rgba(59, 130, 246, 0.26);
+  --color-toolbar-text: #bfdbfe;
+  --color-toolbar-muted: #94a3b8;
+  --color-reasoning-surface: rgba(148, 163, 184, 0.12);
+  --color-reasoning-border: rgba(148, 163, 184, 0.2);
+  --color-reasoning-contrast: rgba(248, 250, 252, 0.1);
+  --color-code-surface: rgba(15, 23, 42, 0.85);
+  --color-code-border: rgba(148, 163, 184, 0.28);
+  --color-code-label: #cbd5f5;
+  --color-copy-button-bg: rgba(15, 23, 42, 0.85);
+  --color-copy-button-hover: rgba(30, 41, 59, 0.85);
+  --color-new-indicator-bg: rgba(59, 130, 246, 0.82);
+  --color-table-bg: rgba(13, 23, 39, 0.9);
+  --color-table-header-bg: rgba(30, 41, 59, 0.9);
+  --color-table-border: rgba(71, 85, 105, 0.45);
+  --color-scroll-track: rgba(15, 23, 42, 0.6);
+  --color-scroll-thumb: rgba(148, 163, 184, 0.45);
+  --color-scroll-thumb-hover: rgba(148, 163, 184, 0.65);
+  --color-bubble-user: linear-gradient(135deg, rgba(99, 102, 241, 0.95), rgba(59, 130, 246, 0.95));
+  --color-bubble-user-border: rgba(96, 165, 250, 0.5);
+  --color-stop-button-bg: rgba(248, 113, 113, 0.2);
+  --color-stop-button-shadow: rgba(248, 113, 113, 0.32);
+  --color-stop-button-text: #fecaca;
+  --color-surface-shadow: 0 14px 32px rgba(2, 6, 23, 0.5);
+  --shadow-soft: 0 16px 32px rgba(2, 6, 23, 0.55);
+  --shadow-strong: 0 20px 40px rgba(2, 6, 23, 0.7);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text-primary);
+  background: var(--color-app-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
